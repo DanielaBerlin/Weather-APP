@@ -26,5 +26,9 @@ function displayData (response) {
     if (response.cod === "404") {
         const error = document.querySelector(".error");
         error.textContent = "Please enter a valid city";
+        search.value = "";
+    } else {
+        const city = document.querySelector(".city");
+        city.innerText = `${response.name}, ${response.sys.country}`;
     }
 }

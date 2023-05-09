@@ -11,7 +11,32 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <p>Hello World!!!</p>
+    <div class="main-container">
+      <div class="container top">
+        <h1>Weather App</h1>
+        <form action="" onsubmit="return false">
+          <input type="text" class="search" placeholder="Search by city name">
+          <button type="submit" class="btn">Submit</button>
+          <p class="error"></p>
+        </form>
+        <section>
+          <div class="container">
+            <div class="icon">
+              <img src="" alt="" class="weather-icon">
+            </div>
+            <div class="location">
+              <div class="city">Berlin, GER</div>
+              <div class="date">Monday, May 8 2023</div>
+            </div>
+            <div class="current">
+              <div class="temp">Temp: 17 <span>°C</span></div>
+              <div class="weather">Weather: Sunny</div>
+              <div class="temp-range">Temp Range: 10°C / 17°C</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
